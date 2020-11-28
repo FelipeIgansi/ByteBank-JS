@@ -12,11 +12,20 @@ gerente.cadastrarSenha("123456")
 
 
 console.log("Diretor ----")
-let estaLogado = SistemaAutenticacao.login(diretor, "123456");
+const diretorEstaLogado = SistemaAutenticacao.login(diretor, "123456");
 
-console.log(estaLogado);
+console.log(diretorEstaLogado);
 
 console.log("Gerente ----")
-estaLogado = SistemaAutenticacao.login(gerente, "123456");
+const gerenteEstaLogado = SistemaAutenticacao.login(gerente, "123456");
 
-console.log(estaLogado);
+console.log(gerenteEstaLogado);
+
+
+const cliente = new Cliente("Lais", 8768746354, "123")
+
+
+console.log("Cliente ----")
+const ClienteEstaLogado = SistemaAutenticacao.login(cliente, "123");
+
+console.log(ClienteEstaLogado);
